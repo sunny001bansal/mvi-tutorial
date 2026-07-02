@@ -5,16 +5,12 @@ plugins {
 
 android {
     namespace = "com.silentcreator.mvitutorial"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.silentcreator.mvitutorial"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0"
 
@@ -49,7 +45,6 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
 
-    implementation(libs.android.arch.lifecycle)
     implementation(libs.coil.compose)
     implementation(libs.retrofit.main)
     implementation(libs.retrofit.convertor.gson)
